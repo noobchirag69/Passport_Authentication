@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('./templates/head.ejs') %>
+
+    <body>
+        <h1 style="max-width: 300px; text-align: center;">Welcome, <%= name %>!</h1>
+        <br>
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit" style="padding: 10px 20px; font-size: 1rem;">Logout</button>
+        </form>
+    </body>
+
+</html>
